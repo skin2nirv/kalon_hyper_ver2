@@ -699,6 +699,26 @@ class FabCar extends Contract {
         await ctx.stub.putState(carNumber, Buffer.from(JSON.stringify(car)));
         console.info('============= END : Create Car ===========');
     }
+    // {
+    //     userId: 'user1', 
+    //     name: '가족사랑 암보험',
+    //     image: 'stock.jpg',
+    //     InsuranceCompany: 'Samsung',
+    // },
+    async createStock(ctx, stockNumber, userId, name, insuranceCompany, image) {
+        console.info('============= START : Create Stock ===========');
+
+        const stock = {
+            name,
+            docType: 'stock',
+            userId,
+            insuranceCompany,
+            image
+        };
+
+        await ctx.stub.putState(stockNumber, Buffer.from(JSON.stringify(stock)));
+        console.info('============= END : Create Stock ===========');
+    }
 
     async queryAllClients(ctx) {
         const startKey = 'Client0';

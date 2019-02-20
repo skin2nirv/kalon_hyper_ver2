@@ -1,3 +1,4 @@
+const imageHash = require('image-hash')
 var log4js = require('log4js');
 var logger = log4js.getLogger('SampleWebApp');
 const express = require("express");
@@ -211,7 +212,12 @@ app.get("/api/query/:fcn", function (req, res) {
     });
 });
 app.use(cors()); 
-app.post("/api/invoke", function (req, res) {
+app.post("/api/invoke/stock", function (req, res) {
+  imageHash(req.body.image, 16, true, (error, data) => {
+    if(error) throw error;
+    console.log(data)
+  })
+
   console.log(req.body)
   Fabric_Client.newDefaultKeyValueStore({
       path: store_path
@@ -236,10 +242,19 @@ app.post("/api/invoke", function (req, res) {
 
       tx_id = fabric_client.newTransactionID();
 
+    // args : 
+    // {
+    //     userId: 'user1', 
+    //     name: '가족사랑 암보험',
+    //     image: 'stock.jpg',
+    //     InsuranceCompany: 'Samsung',
+    // }
+
+
       var request = {
         chaincodeId: "fabcar",
-        fcn: "createCar",
-        args: [req.body.Key, req.body.colour, req.body.make, req.body.model, req.body.owner], //["CAR12", "a", "b", "c", "d"],
+        fcn: "createStock",
+        args: [req.body.Key, req.body.userId, req.body.name, req.body.image, req.body.InsuranceCompany], //["CAR12", "a", "b", "c", "d"],
         chainId: "mychannel",
         txId: tx_id
       };
