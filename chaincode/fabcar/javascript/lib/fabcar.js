@@ -720,6 +720,38 @@ class FabCar extends Contract {
         console.info('============= END : Create Stock ===========');
     }
 
+    // {
+    //     accidentName: " 머리아픔 ",
+    //     accidentDay: "18.08.21",
+    //     requestDay: "170203",
+    //     accidentNum: "sdf165s1",
+    //     insuranceName: " 김수정",
+    //     insuranceCo: "메리츠",
+    //     stateReceive: false,
+    //     userId: 'user1', 
+    //     image: 'insurance.jpg',
+    //   }
+
+
+    async createClaimForInsurance(ctx, claimNumber, accidentName, accidentDay, requestDay, accidentNum, insuranceName, insuranceCo, stateReceive, userId, image) {
+        console.info('============= START : Create Claim ===========');
+
+        const claim = {
+            accidentName,
+            docType: 'claim',
+            accidentDay,
+            requestDay,
+            accidentNum,
+            insuranceName,
+            insuranceCo,
+            stateReceive,
+            userId,
+            image
+        };
+
+        await ctx.stub.putState(claimNumber, Buffer.from(JSON.stringify(claim)));
+        console.info('============= END : Create Claim ===========');
+    }
     async queryAllClients(ctx) {
         const startKey = 'Client0';
         const endKey = 'Client999';
@@ -747,7 +779,7 @@ class FabCar extends Contract {
                 console.log('end of data');
                 await iterator.close();
                 console.info(allResults);
-                return JSON.stringify(allResults);
+                return allResults;
             }
         }
     }
