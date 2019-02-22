@@ -137,7 +137,38 @@ Profiles:
                     - *Org2
                     - *Org3
                     - *Org4
-    OneOrgChannel:
+
+    ChannelSS:
+        Consortium: SampleConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *Org1
+                - *Org2
+
+            # Capabilities:
+            # <<: *ApplicationCapabilities
+
+    ChannelMR:
+        Consortium: SampleConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *Org1
+                - *Org3
+
+            # Capabilities:
+            # <<: *ApplicationCapabilities
+
+    ChannelKB:
+        Consortium: SampleConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *Org1
+                - *Org4
+
+    ChannelALL:
         Consortium: SampleConsortium
         Application:
             <<: *ApplicationDefaults
@@ -146,4 +177,8 @@ Profiles:
                 - *Org2
                 - *Org3
                 - *Org4
+
+            # Capabilities:
+            # <<: *ApplicationCapabilities
+
 

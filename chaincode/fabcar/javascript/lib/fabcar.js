@@ -360,38 +360,9 @@ class FabCar extends Contract {
     
 
 
-    async initLedgerContractedInsurance(ctx) {
+    async initLedgerContractedInsurance_ss(ctx) {
         console.info('============= START : Initialize Ledger ===========');
         const insurances = [
-            {
-                UserInsuranceID: 1,
-                insuranceId: 1111,
-                name: "국민 행복 암 보험",
-                startDay: "18.06.29",
-                contractor: "김정수",
-                insured: " 김정수",
-                price: "10000",
-                insuranceCo: "메리츠",
-                insurancStock: true,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-            
-              },
-              {
-                UserInsuranceID: 2,
-                insuranceId: 1111,
-                name: "변비 보험",
-                startDay: "18.09.04",
-                contractor: "김수정",
-                insured: " 김수정",
-                price: "12350",
-                insuranceCo: "국민",
-                insurancStock: false,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-              },
               {
                 UserInsuranceID: 3,
                 insuranceId: 1111,
@@ -401,34 +372,6 @@ class FabCar extends Contract {
                 insured: " 수김정",
                 price: "132450",
                 insuranceCo: "삼성",
-                insurancStock: false,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-              },
-              {
-                UserInsuranceID: 4,
-                insuranceId: 1111,
-                name: "복통 보험",
-                startDay: "18.09.04",
-                contractor: "김태희",
-                insured: "김태희",
-                price: "12350",
-                insuranceCo: "국민",
-                insurancStock: false,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-              },
-              {
-                UserInsuranceID: 5,
-                insuranceId: 1111,
-                name: "인민 암 보험",
-                startDay: "18.06.29",
-                contractor: "김정수",
-                insured: " 김정수",
-                price: "10000",
-                insuranceCo: "메리츠",
                 insurancStock: false,
                 userId: 'user1',
                 plannerId: 'planner1',
@@ -457,7 +400,107 @@ class FabCar extends Contract {
         }
         console.info('============= END : Initialize ContractedInsurance Ledger ===========');
     }
-    async initLedgerClaimInsurance(ctx) {
+
+    async initLedgerContractedInsurance_mr(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const insurances = [
+            {
+                UserInsuranceID: 1,
+                insuranceId: 1111,
+                name: "국민 행복 암 보험",
+                startDay: "18.06.29",
+                contractor: "김정수",
+                insured: " 김정수",
+                price: "10000",
+                insuranceCo: "메리츠",
+                insurancStock: true,
+                userId: 'user1',
+                plannerId: 'planner1',
+                specialContents: 'detailContents1'
+            
+              },
+              {
+                UserInsuranceID: 3,
+                insuranceId: 1111,
+                name: "설사 보험",
+                startDay: "18.09.02",
+                contractor: "수정김",
+                insured: " 수김정",
+                price: "132450",
+                insuranceCo: "삼성",
+                insurancStock: false,
+                userId: 'user1',
+                plannerId: 'planner1',
+                specialContents: 'detailContents1'
+              },
+              {
+                UserInsuranceID: 5,
+                insuranceId: 1111,
+                name: "인민 암 보험",
+                startDay: "18.06.29",
+                contractor: "김정수",
+                insured: " 김정수",
+                price: "10000",
+                insuranceCo: "메리츠",
+                insurancStock: false,
+                userId: 'user1',
+                plannerId: 'planner1',
+                specialContents: 'detailContents1'
+              },
+        ];
+
+        for (let i = 0; i < insurances.length; i++) {
+            insurances[i].docType = 'insurance';
+            await ctx.stub.putState('Insurance' + i, Buffer.from(JSON.stringify(insurances[i])));
+            console.info('Added <--> ', insurances[i]);
+        }
+        console.info('============= END : Initialize ContractedInsurance Ledger ===========');
+    }
+
+
+
+    async initLedgerContractedInsurance_kb(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const insurances = [
+              {
+                UserInsuranceID: 2,
+                insuranceId: 1111,
+                name: "변비 보험",
+                startDay: "18.09.04",
+                contractor: "김수정",
+                insured: " 김수정",
+                price: "12350",
+                insuranceCo: "국민",
+                insurancStock: false,
+                userId: 'user1',
+                plannerId: 'planner1',
+                specialContents: 'detailContents1'
+              },
+              {
+                UserInsuranceID: 4,
+                insuranceId: 1111,
+                name: "복통 보험",
+                startDay: "18.09.04",
+                contractor: "김태희",
+                insured: "김태희",
+                price: "12350",
+                insuranceCo: "국민",
+                insurancStock: false,
+                userId: 'user1',
+                plannerId: 'planner1',
+                specialContents: 'detailContents1'
+              },
+        ];
+
+        for (let i = 0; i < insurances.length; i++) {
+            insurances[i].docType = 'insurance';
+            await ctx.stub.putState('Insurance' + i, Buffer.from(JSON.stringify(insurances[i])));
+            console.info('Added <--> ', insurances[i]);
+        }
+        console.info('============= END : Initialize ContractedInsurance_kb Ledger ===========');
+    }
+
+    async initLedgerClaimInsurance_ss(ctx) {
         console.info('============= START : Initialize Ledger ===========');
         const claims = [
             {
@@ -472,16 +515,30 @@ class FabCar extends Contract {
                 image: 'insurance.jpg',
               },
               {
-                accidentName: "치과진단 ",
-                accidentDay: "18.09.04",
-                requestDay: "180630",
-                accidentNum: "54SDFN6",
-                insuranceName: " 권태희",
-                insuranceCo: "국민",
-                stateReceive: "3,000",
+                accidentName: "비염",
+                accidentDay: "18.06.01",
+                requestDay: "180904",
+                accidentNum: "0sd45f",
+                insuranceName: " 김유준",
+                insuranceCo: "삼성",
+                stateReceive: "2,500",
                 userId: 'user1', 
                 image: 'insurance.jpg',
               },
+        ];
+
+        for (let i = 0; i < claims.length; i++) {
+            claims[i].docType = 'claim';
+            await ctx.stub.putState('Claim' + i, Buffer.from(JSON.stringify(claims[i])));
+            console.info('Added <--> ', claims[i]);
+        }
+        console.info('============= END : Initialize ClaimInsurance Ledger ===========');
+    }
+
+
+    async initLedgerClaimInsurance_mr(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const claims = [
               {
                 accidentName: "복통",
                 accidentDay: "18.05.02",
@@ -490,17 +547,6 @@ class FabCar extends Contract {
                 insuranceName: "김희태",
                 insuranceCo: "메리츠",
                 stateReceive: false,
-                userId: 'user1', 
-                image: 'insurance.jpg',
-              },
-              {
-                accidentName: "비염",
-                accidentDay: "18.06.01",
-                requestDay: "180904",
-                accidentNum: "0sd45f",
-                insuranceName: " 김유준",
-                insuranceCo: "삼성",
-                stateReceive: "2,500",
                 userId: 'user1', 
                 image: 'insurance.jpg',
               },
@@ -536,77 +582,123 @@ class FabCar extends Contract {
         console.info('============= END : Initialize ClaimInsurance Ledger ===========');
     }
 
+    async initLedgerClaimInsurance_kb(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const claims = [
+              {
+                accidentName: "치과진단 ",
+                accidentDay: "18.09.04",
+                requestDay: "180630",
+                accidentNum: "54SDFN6",
+                insuranceName: " 권태희",
+                insuranceCo: "국민",
+                stateReceive: "3,000",
+                userId: 'user1', 
+                image: 'insurance.jpg',
+              }
+        ];
+
+        for (let i = 0; i < claims.length; i++) {
+            claims[i].docType = 'claim';
+            await ctx.stub.putState('Claim' + i, Buffer.from(JSON.stringify(claims[i])));
+            console.info('Added <--> ', claims[i]);
+        }
+        console.info('============= END : Initialize ClaimInsurance Ledger ===========');
+    }
 
 
-    async initLedgerStocks(ctx) {
+
+
+    async initLedgerStocks_ss(ctx) {
         console.info('============= START : Initialize Ledger ===========');
         const stocks = [
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "삼성",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "삼성",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "삼성",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "삼성",
+            },
+        ];
+
+        for (let i = 0; i < stocks.length; i++) {
+            stocks[i].docType = 'stock';
+            await ctx.stub.putState('Stock' + i, Buffer.from(JSON.stringify(stocks[i])));
+            console.info('Added <--> ', stocks[i]);
+        }
+        console.info('============= END : Initialize ClaimInsurance Ledger ===========');
+    }
+
+    async initLedgerStocks_mr(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const stocks = [
+            {
+                userId: 'user1', 
+                name: '가족사랑 암보험',
+                image: 'stock.jpg',
+                InsuranceCompany: "메리츠",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "메리츠",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "메리츠",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "메리츠",
             },
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "메리츠",
             },
+        ];
+
+        for (let i = 0; i < stocks.length; i++) {
+            stocks[i].docType = 'stock';
+            await ctx.stub.putState('Stock' + i, Buffer.from(JSON.stringify(stocks[i])));
+            console.info('Added <--> ', stocks[i]);
+        }
+        console.info('============= END : Initialize ClaimInsurance Ledger ===========');
+    }
+
+    async initLedgerStocks_kb(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const stocks = [
             {
                 userId: 'user1', 
                 name: '가족사랑 암보험',
                 image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
+                InsuranceCompany: "국민",
             },
-            {
-                userId: 'user1', 
-                name: '가족사랑 암보험',
-                image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
-            },
-            {
-                userId: 'user1', 
-                name: '가족사랑 암보험',
-                image: 'stock.jpg',
-                InsuranceCompany: 'Samsung',
-            },
+
         ];
 
         for (let i = 0; i < stocks.length; i++) {
