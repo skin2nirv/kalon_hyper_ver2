@@ -931,6 +931,15 @@ class FabCar extends Contract {
         return carAsBytes.toString();
     }
 
+    async queryCoin(ctx, carNumber) {
+        const carAsBytes = await ctx.stub.getState(carNumber); // get the car from chaincode state
+        if (!carAsBytes || carAsBytes.length === 0) {
+            throw new Error(`${carNumber} does not exist`);
+        }
+        console.log(carAsBytes.toString());
+        return carAsBytes.toString();
+    }
+
     async createCar(ctx, carNumber, make, model, color, owner) {
         console.info('============= START : Create Car ===========');
 
