@@ -13,136 +13,148 @@ class FabCar extends Contract {
         const clients = [
             {
                 id: 'user1',
-                name: '김정수',
-                age: 30,
+                name: '이명우',
+                age: 37,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+                phonenumber: '010-3244-6452',
+                image: "https://c.pxhere.com/images/9d/56/fe9d9949f678892a909563be4061-1432871.jpg!d",
                 area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                email:'mk201@naver.com',
+                accountNum: '2343-49564-482359',
+                residentNumber: '831002-1521451',
+                coin : 8      
             },
             {
                 id: 'user2',
-                name: '김정수',
-                age: 30,
-                sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-                area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                name: '최유리',
+                age: 29,
+                sex: 'woman',
+                phonenumber: '010-4234-6785',
+                image: "https://c.pxhere.com/images/49/ce/1aa023be2db2dd135006212751eb-1419067.jpg!d",
+                area: 'Gwangju',
+                email:'yychoi@naver.com',
+                accountNum: '3243-32144-234235',
+                residentNumber: '910303-2535612', 
+                coin : 21    
             },
             {
                 id: 'user3',
-                name: '김정수',
-                age: 30,
+                name: '박대우',
+                age: 33,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+                phonenumber: '010-6456-3244',
+                image: "https://c.pxhere.com/images/8c/df/cb62014c0ae743c2b3c601585c67-1432843.jpg!d",
                 area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                email:'tpk404ys@gmail.com',
+                accountNum: '8567-77754-542676',
+                residentNumber: '871112-1543162',
+                coin :54    
             },
             {
                 id: 'user4',
-                name: '김정수',
-                age: 30,
-                sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-                area: 'seoul',
-                email:'jungsubabo@naver.com',
+                name: '최민우',
+                age: 42,
+                sex: 'woman',
+                phonenumber: '010-3327-6687',
+                image: "https://c.pxhere.com/photos/33/07/adult_agenda_assistant_business_businessman_businesswoman_caf_communication-1532583.jpg!d",
+                area: 'ulsan',
+                email:'parkmj6211@naver.com',
                 accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                residentNumber: '780101-2848482',
+                coin : 43     
             },
             {
                 id: 'user5',
-                name: '김정수',
-                age: 30,
+                name: '박진형',
+                age: 11,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-                area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                phonenumber: '010-9082-3325',
+                image: "https://c.pxhere.com/images/1b/04/6707cd3b5913165b11b2cbc4a2fd-1431501.jpg!d",
+                area: 'yeosu',
+                email:'jjh1011@naver.com',
+                accountNum: '5522-13579-635789',
+                residentNumber: '010307-3564151', 
+                coin : 78    
             },
             {
                 id: 'user6',
-                name: '김정수',
-                age: 30,
-                sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-                area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                name: '이나래',
+                age: 2,
+                sex: 'woman',
+                phonenumber: '010-4467-2274',
+                image: "https://c.pxhere.com/images/7f/db/77c9889464ef92f55ba6293a288c-1447013.jpg!d",
+                area: 'gyeonggi suwon',
+                email:'narae2@naver.com',
+                accountNum: '8522-74368-413456',
+                residentNumber: '181218-4429038',   
+                coin : 34  
             },
             {
                 id: 'user7',
-                name: '김정수',
-                age: 30,
+                name: '조기웅',
+                age: 33,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+                phonenumber: '010-3466-8467',
+                image: "https://c.pxhere.com/images/1a/4f/e66d65aa89d9e14e6ab19ae854a4-1432849.jpg!d",
                 area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                email:'jkkiwoong0308@naver.com',
+                accountNum: '8654-75435-775433',
+                residentNumber: '870507-1939214',
+                coin : 21     
             },
             {
                 id: 'user8',
-                name: '김정수',
-                age: 30,
+                name: '오상호',
+                age: 39,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-                area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                phonenumber: '010-3245-1243',
+                image: "https://c.pxhere.com/images/90/52/afb3b7db5a59c414f22f4f860390-1432835.jpg!d",
+                area: 'busan',
+                email:'5sangho555@gmail.com',
+                accountNum: '3427-33464-445796',
+                residentNumber: '811030-1187648', 
+                coin : 14    
             },
             {
                 id: 'user10',
-                name: '김정수',
-                age: 30,
+                name: '김준원',
+                age: 28,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-                area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                phonenumber: '010-2443-6758',
+                image: "https://c.pxhere.com/images/b9/6e/d4b8008bbb026a1a9c8185c8a792-1428801.jpg!d",
+                area: 'gyeonggi ansan',
+                email:'junna2828@google.com',
+                accountNum: '5234-43546-234687',
+                residentNumber: '920414-1348651', 
+                coin : 34    
             },
             {
                 id: 'user11',
-                name: '김정수',
-                age: 30,
-                sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+                name: '김민정',
+                age: 36,
+                sex: 'woman',
+                phonenumber: '010-3424-9995',
+                image: "https://c.pxhere.com/images/b0/38/1a9a5fd15491632886ee76f61cd0-1434823.jpg!d",
                 area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                email:'mkkim8806@naver.com',
+                accountNum: '2343-43248-489456',
+                residentNumber: '841106-2208415',    
+                coin : 9 
             },
             {
                 id: 'user12',
-                name: '김정수',
+                name: '안민호',
                 age: 30,
                 sex: 'man',
-                phonenumber: '010-4974-4895',
-                image: "https://freecartok.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+                phonenumber: '010-1124-6654',
+                image: "https://c.pxhere.com/images/d2/8b/a914c5b3c5552eb0d2a3f3934293-1443585.jpg!d",
                 area: 'seoul',
-                email:'jungsubabo@naver.com',
-                accountNum: '4567-49564-489456',
-                residentNumber: '890902-1564151',     
+                email:'hun3329nam@gmail.com',
+                accountNum: '6423-23443-234332',
+                residentNumber: '900517-1239851',
+                coin : 3     
             },
+
         ];
 
         for (let i = 0; i < clients.length; i++) {
@@ -155,196 +167,277 @@ class FabCar extends Contract {
 
 
 
+    async initLedgerCoin(ctx) {
+        console.info('============= START : Initialize Ledger ===========');
+        const coins = [
+            {
+                id: 'user1',
+                coinId: 'Coin1',
+                coin : 45
+            },
+            {
+                id: 'planner1',
+                coinId : 'Coin2',
+                coin : 2300
+            },
+        ];
+
+        for (let i = 0; i < coins.length; i++) {
+            coins[i].docType = 'coin';
+            await ctx.stub.putState('Coin' + i, Buffer.from(JSON.stringify(coins[i])));
+            console.info('Added <--> ', coins[i]);
+        }
+        console.info('============= END : Initialize Clinet Ledger ===========');
+    }
+
+
+
     async initLedgerPlanners(ctx) {
         console.info('============= START : Initialize Ledger ===========');
         const planners = [
-            {
-                id: 'planner1',
-                name: '권태희', 
-                startDay: "18.09.04",
-                clientNum: 80,
-                team: 'kalon',
-                averageEstimation: 4,
-                uri: "http://img.hankyung.com/photo/201808/01.17511742.1.jpg",
-                smartRecommedPoint: 10,
-                comment: "미모가 보험 설계의 전부.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner2',
-                name: "김정수",
-                startDay: "18.06.29",
-                clientNum: 1,
-                team: "KB생명",
-                averageEstimation: 4,
-                uri: "https://images.shazam.com/coverart/t40174962-b767300956_s400.jpg",
-                smartRecommedPoint: 100,
-                comment: "설계의 차이는 곧 경험의 차이.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner3',
-                name: "김유준",
-                startDay: "18.09.02", //설계사 등록일
-                clientNum: 384,
-                team: "HICompany",
-                averageEstimation: 5, //별점
-                uri: "https://kizmom.hankyung.com/pdsdata/model/KIZMOM_20170602100640.jpg",
-                smartRecommedPoint: 14,
-                comment: "진짜 이거 너무 빡세다..",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner4',
-                name: "권희",
-                startDay: "18.09.04", //설계사 등록일
-                clientNum: 80,
-                team: "kalon",
-                averageEstimation: 4, //별점
-                uri: "http://img.hankyung.com/photo/201808/01.17511742.1.jpg",
-                smartRecommedPoint: 90,
-                comment: "설계의 전부.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner5',
-                name: "이태희",
-                startDay: "18.09.04", //설계사 등록일
-                clientNum: 80,
-                team: "kalon",
-                averageEstimation: 3, //별점
-                uri: "http://img.hankyung.com/photo/201808/01.17511742.1.jpg",
-                smartRecommedPoint: 25,
-                comment: "마음과 달랐어 왜 이렇게 달라지는 건지.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner6',
-                name: "권희태",
-                startDay: "18.09.04", //설계사 등록일
-                clientNum: 80,
-                team: "kalon",
-                averageEstimation: 2, //별점
-                uri: "http://img.hankyung.com/photo/201808/01.17511742.1.jpg",
-                smartRecommedPoint: 1,
-                comment: "왜 함께한 날들이 떠오르는지 .",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner7',
-                name: "김준",
-                startDay: "18.09.02", //설계사 등록일
-                clientNum: 384,
-                team: "HICompany",
-                averageEstimation: 1, //별점
-                uri: "https://kizmom.hankyung.com/pdsdata/model/KIZMOM_20170602100640.jpg",
-                smartRecommedPoint: 32,
-                comment: "혹시 나와같은지 바쁜일상속에 내생각은...",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner8',
-                name: "유준김",
-                startDay: "18.09.02", //설계사 등록일
-                clientNum: 384,
-                team: "HICompany",
-                averageEstimation: 3, //별점
-                uri: "https://kizmom.hankyung.com/pdsdata/model/KIZMOM_20170602100640.jpg",
-                smartRecommedPoint: 32,
-                comment: "운다고 달라지는 일은 아무것도 없어요.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner9',
-                name: "김유준",
-                startDay: "18.09.02", //설계사 등록일
-                clientNum: 384,
-                team: "HICompany",
-                averageEstimation: 2, //별점
-                uri: "https://kizmom.hankyung.com/pdsdata/model/KIZMOM_20170602100640.jpg",
-                smartRecommedPoint: 23,
-                comment: "후회하지 않는지 끝이라는게... 생각보다 쉬운일.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner10',
-                name: '권태희', 
-                startDay: "18.09.04",
-                clientNum: 80,
-                team: 'kalon',
-                averageEstimation: 4,
-                uri: "http://img.hankyung.com/photo/201808/01.17511742.1.jpg",
-                smartRecommedPoint: 10,
-                comment: "미모가 보험 설계의 전부.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
-            {
-                id: 'planner11',
-                name: '권태희', 
-                startDay: "18.09.04",
-                clientNum: 80,
-                team: 'kalon',
-                averageEstimation: 4,
-                uri: "http://img.hankyung.com/photo/201808/01.17511742.1.jpg",
-                smartRecommedPoint: 10,
-                comment: "미모가 보험 설계의 전부.",
-                residentNumber: '900629',
-                sex: 'woman',
-                activeArea: 'seoul',
-                career: 'KB손해보험 2년차',
-                phoneNum: '010-4974-4895',
-                certificateemail:'dfdsklfdsjkl@gmail.com',
-            },
+                {
+                    id: 'planner1',
+                    name: '오유나', 
+                    startDay: "18.01.04",
+                    clientNum: 80,
+                    team: 'kalon',
+                    averageEstimation: 4,
+                    uri: "https://c.pxhere.com/images/49/ce/1aa023be2db2dd135006212751eb-1419067.jpg!d",
+                    smartRecommedPoint: 10,
+                    comment: "재무설계 가능한 설계사",
+                    residentNumber: '900629',
+                    sex: 'woman',
+                    activeArea: 'seoul',
+                    career: 'KB손해보험 2년차',
+                    phoneNum: '010-2343-4464',
+                    certificateemail:'yoona2343@gmail.com',
+                    carPoint : 213,
+                    babyPoint : 13,
+                    savePoint : 135,
+                    guaranteePoint :58,
+                    coin : 234
+                },
+                {
+                    id: 'planner2',
+                    name: "곽우진",
+                    startDay: "15.03.29",
+                    clientNum: 103,
+                    team: "KB생명",
+                    averageEstimation: 4,
+                    uri: "https://c.pxhere.com/images/9d/56/fe9d9949f678892a909563be4061-1432871.jpg!d",
+                    smartRecommedPoint: 100,
+                    comment: "설계의 차이는 곧 경험의 차이.",
+                    residentNumber: '746788',
+                    sex: 'man',
+                    activeArea: 'gyeonggi suwon',
+                    career: 'KB손해보험 4년차',
+                    phoneNum: '010-3243-4785',
+                    certificateemail:'wwjinny44@gmail.com',
+                    carPoint : 45,
+                    babyPoint : 13,
+                    savePoint : 330,
+                    guaranteePoint :75,
+                    coin : 1230
+                },
+                {
+                    id: 'planner3',
+                    name: "박성준",
+                    startDay: "16.03.16", //설계사 등록일
+                    clientNum: 384,
+                    team: "HICompany",
+                    averageEstimation: 3, //별점
+                    uri: "https://c.pxhere.com/images/36/c8/0ba890bb96b1932bcc123815617c-1419061.jpg!d",
+                    smartRecommedPoint: 29,
+                    comment: "네이버카페 보험전문가. 초심을 잃지 않는 설계사",
+                    residentNumber: '567238',
+                    sex: 'man',
+                    activeArea: 'seoul',
+                    career: '메리츠화재 3년차',
+                    phoneNum: '010-1345-3346',
+                    certificateemail:'qkrtjdwnsl29@gmail.com',
+                    carPoint : 254,
+                    babyPoint : 99,
+                    savePoint : 12,
+                    guaranteePoint :430,
+                    coin : 2345
+                },
+                {
+                    id: 'planner4',
+                    name: "권희상",
+                    startDay: "19.01.04", //설계사 등록일
+                    clientNum: 3,
+                    team: "team29",
+                    averageEstimation: 3, //별점
+                    uri: "https://c.pxhere.com/images/8c/df/cb62014c0ae743c2b3c601585c67-1432843.jpg!d",
+                    smartRecommedPoint: 12,
+                    comment: "신입으로 열정 넘치게 ",
+                    residentNumber: '985644',
+                    sex: 'man',
+                    activeArea: 'ulsan',
+                    career: '삼성생명 1년차',
+                    phoneNum: '010-3424-3455',
+                    certificateemail:'gltkddltlek0209@gmail.com',
+                    carPoint : 450,
+                    babyPoint : 103,
+                    savePoint : 30,
+                    guaranteePoint :275,
+                    coin : 350
+                },
+                {
+                    id: 'planner5',
+                    name: "이상아",
+                    startDay: "13.02.18", //설계사 등록일
+                    clientNum: 62,
+                    team: "team29",
+                    averageEstimation: 4, //별점
+                    uri: "https://images.pexels.com/photos/937483/pexels-photo-937483.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 45,
+                    comment:  "통합재무설계, 보험비교가 강점인 설계사 ",
+                    residentNumber: '345764',
+                    sex: 'woman',
+                    activeArea: 'jeju',
+                    career: '메리츠화재 6년차',
+                    phoneNum: '010-4234-5465',
+                    certificateemail:'leesanga4234@naver.com',
+                    carPoint : 15,
+                    babyPoint : 256,
+                    savePoint : 330,
+                    guaranteePoint :75,
+                    coin : 755
+                },
+                {
+                    id: 'planner6',
+                    name: "김문기",
+                    startDay: "17.04.12", //설계사 등록일
+                    clientNum: 55,
+                    team: "kalon",
+                    averageEstimation: 4, //별점
+                    uri: "https://images.pexels.com/photos/936593/pexels-photo-936593.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 1,
+                    comment: "고객이 최우선!! .",
+                    residentNumber: '191975',
+                    sex: 'man',
+                    activeArea: 'seoul',
+                    career: 'KB손해보험 3년차',
+                    phoneNum: '010-7574-3333',
+                    certificateemail:'doikdie@gmail.com',
+                    carPoint : 65,
+                    babyPoint : 13,
+                    savePoint : 340,
+                    guaranteePoint :72,
+                    coin : 2454
+                },
+                {
+                    id: 'planner7',
+                    name: "오대현",
+                    startDay: "13.01.02", //설계사 등록일
+                    clientNum: 600,
+                    team: "sky",
+                    averageEstimation: 5, //별점
+                    uri: "https://images.pexels.com/photos/914472/pexels-photo-914472.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 32,
+                    comment: "다시 또 다시 나는 달린다",
+                    residentNumber: '163374',
+                    sex: 'man',
+                    activeArea: 'seoul',
+                    career: '메리츠화재 6년차',
+                    phoneNum: '010-1771-6694',
+                    certificateemail:'Ohdae@gmail.com',
+                    carPoint : 75,
+                    babyPoint : 31,
+                    savePoint : 33,
+                    guaranteePoint :450,
+                    coin : 2241
+                },
+                {
+                    id: 'planner8',
+                    name: "오상균",
+                    startDay: "17.04.02", //설계사 등록일
+                    clientNum: 120,
+                    team: "HICompany",
+                    averageEstimation: 3, //별점
+                    uri: "https://images.pexels.com/photos/46246/people-man-model-glasses-46246.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 35,
+                    comment: "아프니까 청춘이다.",
+                    residentNumber: '888471',
+                    sex: 'man',
+                    activeArea: 'seoul',
+                    career: '삼성생명 2년차',
+                    phoneNum: '010-3354-4112',
+                    certificateemail:'sang@gmail.com',
+                    carPoint : 345,
+                    babyPoint : 13,
+                    savePoint : 230,
+                    guaranteePoint :45,
+                    coin : 42521
+                },
+                {
+                    id: 'planner9',
+                    name: "신현우",
+                    startDay: "15.03.15", //설계사 등록일
+                    clientNum: 541,
+                    team: "HICompany",
+                    averageEstimation: 2, //별점
+                    uri: "https://images.pexels.com/photos/92331/pexels-photo-92331.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 32,
+                    comment: "내가 이끄는 삶.",
+                    residentNumber: '365774',
+                    sex: 'woman',
+                    activeArea: 'seoul',
+                    career: 'KB손해보험 4년차',
+                    phoneNum: '010-8823-4115',
+                    certificateemail:'shin55@gmail.com',
+                    carPoint : 421,
+                    babyPoint : 78,
+                    savePoint : 30,
+                    guaranteePoint :57,
+                    coin : 23501
+                },
+                {
+                    id: 'planner10',
+                    name: '김수현', 
+                    startDay: "15.09.10",
+                    clientNum: 230,
+                    team: 'kalon',
+                    averageEstimation: 4,
+                    uri: "https://images.pexels.com/photos/991199/pexels-photo-991199.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 19,
+                    comment: "미모도 곧 경쟁력이다.",
+                    residentNumber: '349992',
+                    sex: 'woman',
+                    activeArea: 'seoul',
+                    career: 'KB손해보험 4년차',
+                    phoneNum: '010-9658-4333',
+                    certificateemail:'sooooohyun@gmail.com',
+                    carPoint : 54,
+                    babyPoint : 443,
+                    savePoint : 53,
+                    guaranteePoint :95,
+                    coin : 547
+                },
+                {
+                    id: 'planner11',
+                    name: '임윤경', 
+                    startDay: "18.02.06",
+                    clientNum: 80,
+                    team: 'kalon',
+                    averageEstimation: 4,
+                    uri: "https://images.pexels.com/photos/863098/pexels-photo-863098.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    smartRecommedPoint: 10,
+                    comment: "내가 없으면 안되는 곳.",
+                    residentNumber: '663541',
+                    sex: 'woman',
+                    activeArea: 'seoul',
+                    career: '메리츠화재 2년차',
+                    phoneNum: '010-2221-5541',
+                    certificateemail:'yoon13@gmail.com',
+                    carPoint : 200,
+                    babyPoint : 124,
+                    savePoint : 175,
+                    guaranteePoint :45,
+                    coin : 2100
+                },
+    
         ];
 
         for (let i = 0; i < planners.length; i++) {
@@ -363,34 +456,35 @@ class FabCar extends Contract {
     async initLedgerContractedInsurance_ss(ctx) {
         console.info('============= START : Initialize Ledger ===========');
         const insurances = [
-              {
-                UserInsuranceID: 3,
-                insuranceId: 1111,
-                name: "설사 보험",
-                startDay: "18.09.02",
-                contractor: "수정김",
-                insured: " 수김정",
-                price: "132450",
-                insuranceCo: "삼성",
-                insurancStock: false,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-              },
-              {
-                UserInsuranceID: 6,
-                insuranceId: 1111,
-                name: "인민 설사 보험 ",
-                startDay: "18.06.29",
-                contractor: "김정수",
-                insured: " 김정수",
-                price: "10000",
-                insuranceCo: "삼성",
-                insurancStock: false,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-              },
+                {
+                  UserInsuranceID: 1,
+                  insuranceId: 1111,
+                  name: "통합유니버설LTC종신보험",
+                  startDay: "18.09.02",
+                  contractor: "김복자",
+                  insured: " 임수정",
+                  price: "205000",
+                  insuranceCo: "삼성",
+                  insurancStock: false,
+                  userId: 'user1',
+                  plannerId: 'planner1',
+                  specialContents: 'detailContents1'
+                },
+                {
+                  UserInsuranceID: 2,
+                  insuranceId: 1112,
+                  name: "우리아이통합보장보험",
+                  startDay: "16.05.29",
+                  contractor: "김민정",
+                  insured: " 김루이",
+                  price: "132200",
+                  insuranceCo: "삼성",
+                  insurancStock: false,
+                  userId: 'user1',
+                  plannerId: 'planner1',
+                  specialContents: 'detailContents1'
+                },
+  
         ];
 
         for (let i = 0; i < insurances.length; i++) {
@@ -694,10 +788,23 @@ class FabCar extends Contract {
         const stocks = [
             {
                 userId: 'user1', 
-                name: '가족사랑 암보험',
+                name: 'KB월지급식 ELS변액연금보험',
                 image: 'stock.jpg',
                 InsuranceCompany: "국민",
             },
+            {
+                userId: 'user1', 
+                name: 'KB 국민암보험',
+                image: 'stock.jpg',
+                InsuranceCompany: "국민",
+            },
+            {
+                userId: 'user1', 
+                name: 'KB 건강+종신보험',
+                image: 'stock.jpg',
+                InsuranceCompany: "국민",
+            },
+
 
         ];
 
@@ -736,21 +843,21 @@ class FabCar extends Contract {
             },
             {
                 username: "sdfo12138",
-                comment: "이번년도 목표는 이미 이루었습니다. 장난한번봐요",
+                comment: "이번년도 목표는 이미 이루었습니다. 꼭 한번봐요",
                 start: 3,
                 uri: "https://fimg2.pann.com/new/download.jsp?FileID=24714962"
                 ,boardId: 'planner1'
             },
             {
                 username: "yej0424",
-                comment: "저는 이제 떠나려고 합니다. 세상아 안녕",
+                comment: "덕분에 보험료를 줄일 수 있어서 너무 감사합니다.",
                 start: 2,
                 uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNlxFQC8vg1w3xit2zNNC-AqEiWOc_UFEWyvXPI_s50S22EbuTyw"
                 ,boardId: 'planner1'
             },
             {
                 username: "skin2nirv",
-                comment: "정말 설계를 머 같이 하시네요.",
+                comment: "진짜 똑똑하시고 알기쉽게 설명해주셨어요.",
                 start: 1,
                 uri: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwj5pZHJ-6XgAhUCabwKHeMXD7IQjRx6BAgBEAU&url=https%3A%2F%2Fweheartit.com%2Fentry%2F219428443&psig=AOvVaw0cA_87uMlRDW2aeD04WZ51&ust=1549503248275201",
                 boardId: 'planner1'
@@ -1070,6 +1177,38 @@ class FabCar extends Contract {
         }
     }
 
+    async queryAllUserCoins(ctx) {
+        const startKey = 'Coin0';
+        const endKey = 'Coin999';
+
+        const iterator = await ctx.stub.getStateByRange(startKey, endKey);
+
+        const allResults = [];
+        while (true) {
+            const res = await iterator.next();
+
+            if (res.value && res.value.value.toString()) {
+                console.log(res.value.value.toString('utf8'));
+
+                const Key = res.value.key;
+                let Record;
+                try {
+                    Record = JSON.parse(res.value.value.toString('utf8'));
+                } catch (err) {
+                    console.log(err);
+                    Record = res.value.value.toString('utf8');
+                }
+                allResults.push({ Key, Record });
+            }
+            if (res.done) {
+                console.log('end of data');
+                await iterator.close();
+                console.info(allResults);
+                return allResults;
+            }
+        }
+    }
+
     async changeCarOwner(ctx, carNumber, newOwner) {
         console.info('============= START : changeCarOwner ===========');
 
@@ -1083,6 +1222,21 @@ class FabCar extends Contract {
         await ctx.stub.putState(carNumber, Buffer.from(JSON.stringify(car)));
         console.info('============= END : changeCarOwner ===========');
     }
+
+    async addCoinOwner(ctx, coinNumber, addCoin) {
+        console.info('============= START : addCoin ===========');
+
+        const coinAsBytes = await ctx.stub.getState(coinNumber); // get the car from chaincode state
+        if (!coinAsBytes || coinAsBytes.length === 0) {
+            throw new Error(`${coinNumber} does not exist`);
+        }
+        const coin = JSON.parse(coinAsBytes.toString());
+        coin.coin = coin.coin + addCoin;
+
+        await ctx.stub.putState(coinNumber, Buffer.from(JSON.stringify(coin)));
+        console.info('============= END : addCoin ===========');
+    }
+
 
 }
 
