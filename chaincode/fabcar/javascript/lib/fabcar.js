@@ -171,14 +171,33 @@ class FabCar extends Contract {
         console.info('============= START : Initialize Ledger ===========');
         const coins = [
             {
-                id: 'user1',
-                coinId: 'Coin1',
-                coin : 45
+                coin : 3,
+                date : "2018.09.06",
+                
             },
             {
-                id: 'planner1',
-                coinId : 'Coin2',
-                coin : 2300
+                coin : 4,
+                date : "2018.08.07"
+            },
+            {
+                coin : 7,
+                date : "2018.07.02"
+            },
+            {
+                coin : 2,
+                date : "2018.06.02"
+            },
+            {
+                coin : 2,
+                date : "2018.03.02"
+            },
+            {
+                coin : 2,
+                date : "2017.01.02"
+            },
+            {
+                coin : 2,
+                date : "2018.01.01"
             },
         ];
 
@@ -468,7 +487,9 @@ class FabCar extends Contract {
                   insurancStock: false,
                   userId: 'user1',
                   plannerId: 'planner1',
-                  specialContents: 'detailContents1'
+                  specialContents: 'detailContents1',
+                  insuredDate : "60세 만기",
+                  period : "10년"
                 },
                 {
                   UserInsuranceID: 2,
@@ -482,8 +503,108 @@ class FabCar extends Contract {
                   insurancStock: false,
                   userId: 'user1',
                   plannerId: 'planner1',
-                  specialContents: 'detailContents1'
+                  specialContents: 'detailContents1',
+                  insuredDate : "60세 만기",
+                  period : "10년"
                 },
+                {
+                    UserInsuranceID: 1,
+                    insuranceId: 1111,
+                    name: "국민 행복 암 보험",
+                    startDay: "18.06.29",
+                    contractor: "김정수",
+                    insured: " 김정수",
+                    price: "10000",
+                    insuranceCo: "삼성",
+                    insurancStock: true,
+                    userId: 'user1',
+                    plannerId: 'planner1',
+                    specialContents: 'detailContents1',
+                    insuredDate : "60세 만기",
+                    period : "10년"
+                
+                  },
+                  {
+                    UserInsuranceID: 3,
+                    insuranceId: 1111,
+                    name: "설사 보험",
+                    startDay: "18.09.02",
+                    contractor: "수정김",
+                    insured: " 수김정",
+                    price: "132450",
+                    insuranceCo: "삼성",
+                    insurancStock: false,
+                    userId: 'user1',
+                    plannerId: 'planner1',
+                    specialContents: 'detailContents1',
+                    insuredDate : "90세 만기",
+                    period : "30년"
+                  },
+                  {
+                    UserInsuranceID: 5,
+                    insuranceId: 1111,
+                    name: "인민 암 보험",
+                    startDay: "18.06.29",
+                    contractor: "김정수",
+                    insured: " 김정수",
+                    price: "10000",
+                    insuranceCo: "삼성",
+                    insurancStock: false,
+                    userId: 'user1',
+                    plannerId: 'planner1',
+                    specialContents: 'detailContents1',
+                    insuredDate : "90세 만기",
+                    period : "15년"
+                  },
+                  {
+                    UserInsuranceID: 5,
+                    insuranceId: 1111,
+                    name: "인민 암 보험",
+                    startDay: "18.06.29",
+                    contractor: "김정수",
+                    insured: " 김정수",
+                    price: "10000",
+                    insuranceCo: "삼성",
+                    insurancStock: false,
+                    userId: 'user1',
+                    plannerId: 'planner1',
+                    specialContents: 'detailContents1',
+                    insuredDate : "90세 만기",
+                    period : "15년"
+                  },
+                  {
+                    UserInsuranceID: 2,
+                    insuranceId: 1111,
+                    name: "변비 보험",
+                    startDay: "18.09.04",
+                    contractor: "김수정",
+                    insured: " 김수정",
+                    price: "12350",
+                    insuranceCo: "삼성",
+                    insurancStock: false,
+                    userId: 'user1',
+                    plannerId: 'planner1',
+                    specialContents: 'detailContents1',
+                    insuredDate : "75세 만기",
+                    period : "5년"
+                  },
+                  {
+                    UserInsuranceID: 4,
+                    insuranceId: 1111,
+                    name: "복통 보험",
+                    startDay: "18.09.04",
+                    contractor: "김태희",
+                    insured: "김태희",
+                    price: "12350",
+                    insuranceCo: "삼성",
+                    insurancStock: false,
+                    userId: 'user1',
+                    plannerId: 'planner1',
+                    specialContents: 'detailContents1',
+                    insuredDate : "60세 만기",
+                    period : "2년"
+                  },
+                
   
         ];
 
@@ -510,7 +631,9 @@ class FabCar extends Contract {
                 insurancStock: true,
                 userId: 'user1',
                 plannerId: 'planner1',
-                specialContents: 'detailContents1'
+                specialContents: 'detailContents1',
+                insuredDate : "60세 만기",
+                period : "10년"
             
               },
               {
@@ -521,26 +644,15 @@ class FabCar extends Contract {
                 contractor: "수정김",
                 insured: " 수김정",
                 price: "132450",
-                insuranceCo: "삼성",
-                insurancStock: false,
-                userId: 'user1',
-                plannerId: 'planner1',
-                specialContents: 'detailContents1'
-              },
-              {
-                UserInsuranceID: 5,
-                insuranceId: 1111,
-                name: "인민 암 보험",
-                startDay: "18.06.29",
-                contractor: "김정수",
-                insured: " 김정수",
-                price: "10000",
                 insuranceCo: "메리츠",
                 insurancStock: false,
                 userId: 'user1',
                 plannerId: 'planner1',
-                specialContents: 'detailContents1'
+                specialContents: 'detailContents1',
+                insuredDate : "90세 만기",
+                period : "30년"
               },
+
         ];
 
         for (let i = 0; i < insurances.length; i++) {
@@ -568,7 +680,9 @@ class FabCar extends Contract {
                 insurancStock: false,
                 userId: 'user1',
                 plannerId: 'planner1',
-                specialContents: 'detailContents1'
+                specialContents: 'detailContents1',
+                insuredDate : "75세 만기",
+                period : "5년"
               },
               {
                 UserInsuranceID: 4,
@@ -582,7 +696,9 @@ class FabCar extends Contract {
                 insurancStock: false,
                 userId: 'user1',
                 plannerId: 'planner1',
-                specialContents: 'detailContents1'
+                specialContents: 'detailContents1',
+                insuredDate : "60세 만기",
+                period : "2년"
               },
         ];
 
@@ -884,6 +1000,15 @@ class FabCar extends Contract {
         return carAsBytes.toString();
     }
 
+    async queryCoin(ctx, coinNumber) {
+        const coinAsBytes = await ctx.stub.getState(coinNumber);
+        if (!coinAsBytes || coinAsBytes.length === 0) {
+            throw new Error(`${coinNumber} does not exist`);
+        }
+        console.log(coinAsBytes.toString());
+        return coinAsBytes.toString();
+    }
+
     async createCar(ctx, carNumber, make, model, color, owner) {
         console.info('============= START : Create Car ===========');
 
@@ -896,7 +1021,24 @@ class FabCar extends Contract {
         };
 
         await ctx.stub.putState(carNumber, Buffer.from(JSON.stringify(car)));
-        console.info('============= END : Create Car ===========');
+        console.info('============= END : Create Coin ===========');
+    }
+    // {
+    //     coin : 2,
+    //     date : "2018.01.01"
+    // },
+
+    async createCoin(ctx, coinNumber, coin, date) {
+        console.info('============= START : Create Coin ===========');
+
+        const coin = {
+            coin,
+            docType: 'coin',
+            date,
+        };
+
+        await ctx.stub.putState(coinNumber, Buffer.from(JSON.stringify(coin)));
+        console.info('============= END : Create Coin ===========');
     }
     // {
     //     userId: 'user1', 
@@ -950,6 +1092,46 @@ class FabCar extends Contract {
 
         await ctx.stub.putState(claimNumber, Buffer.from(JSON.stringify(claim)));
         console.info('============= END : Create Claim ===========');
+    }
+
+    // {
+    //     UserInsuranceID: 2,
+    //     insuranceId: 1111,
+    //     name: "변비 보험",
+    //     startDay: "18.09.04",
+    //     contractor: "김수정",
+    //     insured: " 김수정",
+    //     price: "12350",
+    //     insuranceCo: "국민",
+    //     insurancStock: false,
+    //     userId: 'user1',
+    //     plannerId: 'planner1',
+    //     specialContents: 'detailContents1'
+    //   },
+
+    async createInsurance(ctx, insuranceNumber, UserInsuranceID, insuranceId, name, startDay, contractor, insured, price, insuranceCo, insurancStock, userId, plannerId, specialContents, insuredDate, period ) {
+        console.info('============= START : Create Insurance ===========');
+
+        const insurance = {
+            UserInsuranceID,
+            docType: 'insurance',
+            insuranceId,
+            name,
+            startDay,
+            contractor,
+            insured,
+            price,
+            insuranceCo,
+            insurancStock,
+            userId,
+            plannerId,
+            specialContents,
+            insuredDate,
+            period 
+        };
+
+        await ctx.stub.putState(insuranceNumber, Buffer.from(JSON.stringify(insurance)));
+        console.info('============= END : Create Insurance ===========');
     }
     async queryAllClients(ctx) {
         const startKey = 'Client0';
